@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<link rel="stylesheet" href="style.css" >
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+<form>
+<div class="card">
+<h2>
+Welcome To Our Website
+Name:
+<script type="text/javascript">
+document.write(localStorage.getItem('name'))
+</script>
+</h2>
+<h3>
+Email:
+<script type="text/javascript">
+document.write(localStorage.getItem('email'))
+</script>
+</h3>
+<input type="button" id="btn-logout" class="btn btn-info" onclick="logout()" value="Logout">
+
+</div>
+</form>
+</div>
+
+</body>
+<script type="text/javascript">
+function logout(){
+	location.href="login.html"
+}
+</script>
+</html>
